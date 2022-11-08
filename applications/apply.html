@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../applications/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./font/css/all.css" />
+
+    <title>Zeetech</title>
+  </head>
+  <body>
+    <nav>
+      <logo id="logo">
+        <img
+          src="../images/IMG-20220905-WA0000__1_-removebg-preview.png"
+          alt="image" />
+      </logo>
+      <div class="menu_bar">
+        <ul class="menubar">
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="#">Courses</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#">Desktop Publishimg</a></li>
+                <li><a href="#">Computer Engineering </a></li>
+                <li><a href="#"> Web Designing</a></li>
+                <li><a href="#">Graphic Designing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="#" style="color: yellow">Admin</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="hambugger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+    </nav>
+
+    <br />
+    <div class="containe" style="padding: 20px">
+      <h3>Student Registeration</h3>
+      <hr />
+
+      <form class="row g-3" action="./index.php" method="get">
+        <div class="col-md-6">
+          <label for="inputSurname" class="form-label">Surname: </label>
+          <input type="text" class="form-control" id="surname" name="surname" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputOtherNames" class="form-label">Other Names: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="other_names"
+            name="other_names" />
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            name="email" />
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputPhone" class="form-label">Phone No:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="phone"
+            name="phone_number" />
+        </div>
+
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address: </label>
+          <textarea
+            class="form-control"
+            id="address"
+            rows="3"
+            name="address"></textarea>
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">Course of Study</label>
+          <select
+            id="inputState"
+            class="form-select form-control"
+            name="course">
+            <option selected>Choose...</option>
+            <option value="Desktop Publishing" name = "opt1">Desktop Publishing</option>
+            <option value="Computer Engineering" name = "opt2">Computer Engineering</option>
+            <option value="Web Designing" name = "opt3">Web Designing</option>
+            <option value="Secreteriat Studies" name = "opt4">Secreteriat Studies</option>
+            <option value="Networking" name = "opt5">Networking</option>
+            <option value="Graphics Design" name = "opt5">Graphic Design</option>
+          </select>
+        </div>
+        <!-- ADD -->
+        <div class="col-md-6">
+          <label for="inputOtherNames" class="form-label">Date of birth </label>
+          <input
+            type="date"
+            class="form-control"
+            id="other_names"
+            name="Date_of_birth" />
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">Religion</label>
+          <select
+            id="inputState"
+            class="form-select form-control"
+            name="Religion">
+            <option selected>Choose...</option>
+            <option>Christianity</option>
+            <option>Islam</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <!-- addd -->
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">State</label>
+          <input type="text" class="form-control" id="state" name="state" />
+        </div>
+
+        <div class="card">
+          <div class="card-header alert-success">Guardian Information</div>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputGuardianName" class="form-label"
+                  >Guardian Name:
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="guardian_name"
+                  name="guardian_name" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputGuardianPhone" class="form-label"
+                  >Guardian Phone No
+                </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="guardian_phone"
+                  name="guardian_phone" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mb-4" align="center">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="position: relative">
+              <span>submit</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="contain">
+      <h1>Never miss an opportunity</h1>
+      <form>
+        <label for="name">Subscribe to our Newsletter</label>
+        <input type="email" placeholder="Enter Your Address" />
+        <button><span>Subscribe</span></button>
+      </form>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="footer">
+      <footer>
+        <div class="container8">
+          <div class="container2 con2">
+            <h3>About us</h3>
+            <br />
+
+            <p>
+              We welcome you to Zeetech computers and green energy Formerly
+              known as Zeetech college of computer is a computer instiute
+              founded on April 3,2011.
+              <a href="/about.html">Read more...</a>
+              <!-- </p>
+
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i> < -->
+            </p>
+          </div>
+
+          <div class="container2">
+            <h3>Quick links</h3>
+            <br />
+            <p>
+              <a href="#">Course & Sell</a> <br />
+              <a href="#"> Galleries</a> <br />
+              <a href="#">Director Desk </a><br />
+              <a href="#">Help & Support</a> <br />
+              <a href="/applications/apply.html">Apply now</a>
+            </p>
+          </div>
+          <div class="container2">
+            <h3>About</h3>
+            <br />
+            <p>
+              Staff <br />
+              Team <br />
+              Careeers
+            </p>
+          </div>
+        </div>
+
+        <div class="container2 con4">
+          <h3 style="font-size: 25px">Contact us</h3>
+          <br />
+          <form>
+            <input type="text" placeholder="Your Name" /> <br />
+            <input type="text" placeholder="Your Email" /> <br />
+            <input type="text" placeholder="Subject" /> <br />
+            <textarea
+              name=""
+              id=""
+              cols="33"
+              rows="7"
+              placeholder="message"></textarea>
+            <br />
+            <button>Send</button>
+          </form>
+        </div>
+      </footer>
+      <hr />
+      <p
+        class="copy"
+        align="center"
+        style="
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: -15px;
+        ">
+        Copyright © 2022 All rights reserved | Website Developed &hearts; by
+        <span style="color: yellow"> Zeetech Web Student </span>
+      </p>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

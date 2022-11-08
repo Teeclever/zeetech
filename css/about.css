@@ -1,0 +1,141 @@
+.container5 {
+display: flex;
+justify-content: space-between;
+margin-top: 1vw;
+
+}
+.container5 img {
+    width: 50%;
+    height: 600px
+}
+.container5 .con5 {
+    height: 600px;
+  
+    display: grid;
+    place-content: center;
+    padding: 0px 15px;
+    
+}
+.container5 .con5 p {
+  
+    line-height: 25px;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+
+
+.typing-demo {
+    width: 35ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    color: green;
+    width: inherit;
+    text-shadow: 2px 3px 40px;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    margin-top: 10px;
+    font-size: 1.9em;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+/* .general2 {
+    background-image: url(/zeeteechh/images/image5.png);
+    background-size: cover;
+    background-position: center;
+} */
+
+
+/* for tablet */
+
+
+
+
+@media  (max-width:1084px) {
+  .container5 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+    
+    
+    
+    }
+    .container5 img {
+        width: 50%;
+        height: 400px
+    
+    }
+    .container5 .con5 {
+        height: 600px;
+        
+        display: grid;
+        place-content: center;
+        padding: 0px 15px;
+        
+    }
+    .container5 .con5 p {
+      
+        line-height: 20px;
+        font-size: 12px;
+        font-family: monospace;
+    }
+    .con5 h3 {
+      font-size: 12px;
+    }
+  
+}
+
+
+
+
+
+/* for mobile first */
+
+@media (max-width:800px) {
+
+.hambugger {
+  
+}
+
+    .container5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 70px;
+        margin-top: -40px;
+       
+        }
+        .container5 img {
+            width: 100%;
+            height: 400px
+           
+        }
+        .container5 .con5 {
+            height: 600px;
+            
+            display: grid;
+            place-content: center;
+            padding: 0px 15px;
+            
+        }
+        .container5 .con5 p {
+        
+            line-height: 22px;
+            font-size: 12px;
+            font-family: monospace;
+        }
+        .typing-demo {
+            font-size: 1.5em;
+            margin-left: 20px;
+        }
+}
